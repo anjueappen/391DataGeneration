@@ -126,8 +126,6 @@
     <state id="A100"><onentry><dg:assign name="huntPilotDN"  set="#{random_text}"/></onentry><transition target="A101" event="A101"/></state>
     <state id="A101"><onentry><dg:assign name="huntPilotPartition"  set="#{random_text}"/></onentry><transition target="end" event="end"/></state>
 
-
-
     <state id="end">
         <!-- We're done -->
     </state>
