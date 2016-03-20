@@ -773,3 +773,331 @@
 03-19-2016 19:19:36 75 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
 03-19-2016 19:19:36 74 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
 03-19-2016 19:19:37 1006 CSVDataGen.main() (DefaultDistributor:116)	DONE
+03-19-2016 22:12:21 0 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:21 0 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 0 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 22:12:21 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:21 1 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:21 25 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:21 26 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:21 26 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:21 27 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:21 27 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:21 27 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:21 27 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:21 28 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:21 28 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:21 26 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 22:12:21 29 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 22:12:21 26 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 33 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 33 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 33 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 33 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 34 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 34 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 34 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 35 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 35 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 35 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 37 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 37 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 38 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 38 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 38 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 38 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 39 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 39 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 39 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 39 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 39 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 40 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 40 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 40 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 41 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 41 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 41 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 41 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 42 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 42 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 42 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 42 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 43 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 43 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 43 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 44 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 44 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 44 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 44 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 45 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 45 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 45 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 46 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 46 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 46 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 46 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 47 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 47 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 47 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 48 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 48 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 48 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 48 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 49 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 49 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 49 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 49 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 50 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 50 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 50 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 51 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 51 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 51 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 51 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 52 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 52 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 52 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 52 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 53 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 53 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 53 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 54 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 54 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 54 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 54 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 55 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 55 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 55 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 55 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 56 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 56 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 56 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 57 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 57 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:21 57 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:21 25 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:21 32 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 22:12:21 59 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 22:12:21 59 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 22:12:21 59 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 22:12:21 59 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 22:12:21 60 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 22:12:21 60 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 22:12:21 60 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 22:12:21 60 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 22:12:21 32 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:21 61 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:21 61 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:21 62 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:21 62 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:21 62 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:21 62 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:21 63 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:21 63 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:21 63 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:21 64 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:21 26 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:21 65 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:21 63 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 22:12:21 69 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 22:12:21 68 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:22 995 CSVDataGen.main() (DefaultDistributor:116)	DONE
+03-19-2016 22:12:42 0 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 0 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 22:12:42 0 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:42 13 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:42 14 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:42 14 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:42 15 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:42 15 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:42 15 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:42 15 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:42 15 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:42 16 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:42 16 Thread-1 (DataConsumer:156)	Exception in DataWriter
+java.lang.ArrayIndexOutOfBoundsException: 99
+	at CSVFileWriter.writeOutput(CSVFileWriter.java:54)
+	at org.finra.datagenerator.consumer.DataConsumer.consume(DataConsumer.java:154)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.produceOutput(DefaultDistributor.java:127)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.access$000(DefaultDistributor.java:35)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor$1.run(DefaultDistributor.java:87)
+03-19-2016 22:12:42 20 Thread-1 (DataConsumer:156)	Exception in DataWriter
+java.lang.ArrayIndexOutOfBoundsException: 99
+	at CSVFileWriter.writeOutput(CSVFileWriter.java:54)
+	at org.finra.datagenerator.consumer.DataConsumer.consume(DataConsumer.java:154)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.produceOutput(DefaultDistributor.java:127)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.access$000(DefaultDistributor.java:35)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor$1.run(DefaultDistributor.java:87)
+03-19-2016 22:12:42 0 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 29 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 30 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 30 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 30 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 31 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 31 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 31 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 31 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 32 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 32 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 32 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 32 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 33 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 33 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 33 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 33 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 34 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 34 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 34 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 35 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 35 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 35 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 35 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 36 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 36 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 36 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 36 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 37 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 37 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 37 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 37 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 38 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 38 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 27 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 26 Thread-1 (DataConsumer:156)	Exception in DataWriter
+java.lang.ArrayIndexOutOfBoundsException: 99
+	at CSVFileWriter.writeOutput(CSVFileWriter.java:54)
+	at org.finra.datagenerator.consumer.DataConsumer.consume(DataConsumer.java:154)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.produceOutput(DefaultDistributor.java:127)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.access$000(DefaultDistributor.java:35)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor$1.run(DefaultDistributor.java:87)
+03-19-2016 22:12:42 40 Thread-1 (DataConsumer:156)	Exception in DataWriter
+java.lang.ArrayIndexOutOfBoundsException: 99
+	at CSVFileWriter.writeOutput(CSVFileWriter.java:54)
+	at org.finra.datagenerator.consumer.DataConsumer.consume(DataConsumer.java:154)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.produceOutput(DefaultDistributor.java:127)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.access$000(DefaultDistributor.java:35)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor$1.run(DefaultDistributor.java:87)
+03-19-2016 22:12:42 41 Thread-1 (DataConsumer:156)	Exception in DataWriter
+java.lang.ArrayIndexOutOfBoundsException: 99
+	at CSVFileWriter.writeOutput(CSVFileWriter.java:54)
+	at org.finra.datagenerator.consumer.DataConsumer.consume(DataConsumer.java:154)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.produceOutput(DefaultDistributor.java:127)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.access$000(DefaultDistributor.java:35)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor$1.run(DefaultDistributor.java:87)
+03-19-2016 22:12:42 16 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:42 13 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 22:12:42 43 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 22:12:42 43 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 22:12:42 43 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 22:12:42 44 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 22:12:42 44 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 22:12:42 44 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 22:12:42 45 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 22:12:42 45 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 22:12:42 45 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 22:12:42 46 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 22:12:42 11 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 46 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 47 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 47 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 47 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 47 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 48 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 48 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 48 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 48 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 49 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 49 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 49 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 50 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 50 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 50 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 51 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 51 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 52 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 52 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 52 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 52 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 53 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 53 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 54 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 54 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 55 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 55 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 55 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 56 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 22:12:42 42 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:42 42 Thread-1 (DataConsumer:156)	Exception in DataWriter
+java.lang.ArrayIndexOutOfBoundsException: 99
+	at CSVFileWriter.writeOutput(CSVFileWriter.java:54)
+	at org.finra.datagenerator.consumer.DataConsumer.consume(DataConsumer.java:154)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.produceOutput(DefaultDistributor.java:127)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.access$000(DefaultDistributor.java:35)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor$1.run(DefaultDistributor.java:87)
+03-19-2016 22:12:42 39 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 57 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 38 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 22:12:42 58 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 58 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 58 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 59 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 59 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 59 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 60 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 60 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 60 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 60 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 61 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 61 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 61 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 61 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 61 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 62 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 62 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 62 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 62 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 63 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 63 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 63 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 64 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 64 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 64 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 64 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 65 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 22:12:42 65 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 22:12:42 57 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 22:12:42 57 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 22:12:42 57 Thread-1 (DataConsumer:156)	Exception in DataWriter
+java.lang.ArrayIndexOutOfBoundsException: 99
+	at CSVFileWriter.writeOutput(CSVFileWriter.java:54)
+	at org.finra.datagenerator.consumer.DataConsumer.consume(DataConsumer.java:154)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.produceOutput(DefaultDistributor.java:127)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.access$000(DefaultDistributor.java:35)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor$1.run(DefaultDistributor.java:87)
+03-19-2016 22:12:42 67 Thread-1 (DataConsumer:156)	Exception in DataWriter
+java.lang.ArrayIndexOutOfBoundsException: 99
+	at CSVFileWriter.writeOutput(CSVFileWriter.java:54)
+	at org.finra.datagenerator.consumer.DataConsumer.consume(DataConsumer.java:154)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.produceOutput(DefaultDistributor.java:127)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.access$000(DefaultDistributor.java:35)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor$1.run(DefaultDistributor.java:87)
+03-19-2016 22:12:42 68 Thread-1 (DataConsumer:156)	Exception in DataWriter
+java.lang.ArrayIndexOutOfBoundsException: 99
+	at CSVFileWriter.writeOutput(CSVFileWriter.java:54)
+	at org.finra.datagenerator.consumer.DataConsumer.consume(DataConsumer.java:154)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.produceOutput(DefaultDistributor.java:127)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.access$000(DefaultDistributor.java:35)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor$1.run(DefaultDistributor.java:87)
+03-19-2016 22:12:42 68 Thread-1 (DataConsumer:156)	Exception in DataWriter
+java.lang.ArrayIndexOutOfBoundsException: 99
+	at CSVFileWriter.writeOutput(CSVFileWriter.java:54)
+	at org.finra.datagenerator.consumer.DataConsumer.consume(DataConsumer.java:154)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.produceOutput(DefaultDistributor.java:127)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor.access$000(DefaultDistributor.java:35)
+	at org.finra.datagenerator.distributor.multithreaded.DefaultDistributor$1.run(DefaultDistributor.java:87)
+03-19-2016 22:12:42 49 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 22:12:42 58 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 22:12:42 72 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 22:12:42 72 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 22:12:43 999 CSVDataGen.main() (DefaultDistributor:116)	DONE
