@@ -1,3 +1,5 @@
+import org.apache.commons.lang.RandomStringUtils;
+import org.apache.commons.lang.StringUtils;
 import org.finra.datagenerator.consumer.DataPipe;
 import org.finra.datagenerator.consumer.DataTransformer;
 
@@ -12,6 +14,7 @@ public class MachineTransformer implements DataTransformer {
 
     private static final Logger log = Logger.getLogger(MachineTransformer.class.toString());
     private final Random rand = new Random(System.currentTimeMillis());
+    private final RandomStringUtils randomStringUtils = new RandomStringUtils();
     /**
      * The transform method for this DataTransformer
      * @param cr a reference to DataPipe from which to read the current map
@@ -20,12 +23,14 @@ public class MachineTransformer implements DataTransformer {
         for (Map.Entry<String, String> entry : cr.getDataMap().entrySet()) {
             String value = entry.getValue();
 
-            if (value.equals("#{c}")) {
-                // Generate a random number
-                int ran = rand.nextInt();
-                entry.setValue(String.valueOf(ran));
+            if (value.equals("#{random_string}")) {
+                entry.setValue(randomStringUtils.randomAlphabetic(10).toUpperCase());
             }else if (value.equals("#{b}")){
                 entry.setValue("replaced by Anju");
+            }else if (value.equals("#{c}")){
+                entry.setValue("another");
+            }else if (value.equals("#{random_integer}")){
+                entry.setValue(Integer.toString(rand.nextInt()));
             }
         }
     }

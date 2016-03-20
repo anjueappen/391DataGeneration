@@ -21,27 +21,14 @@
        initial="start">
 
     <state id="start">
-        <transition event="SETV1" target="SETV1"/>
+        <transition event="make_entry" target="make_entry"/>
     </state>
 
-    <state id="SETV1">
+    <state id="make_entry">
         <onentry>
-            <dg:assign name="var_out_V1" set="A,B,C"/>
-        </onentry>
-        <transition event="SETV2" target="SETV2"/>
-    </state>
-
-    <state id="SETV2">
-        <onentry>
-            <dg:assign name="var_out_V2" set="1,2,3"/>
-            <assign name="var_out_V3" expr="#{c}"/>
-        </onentry>
-        <transition event="SETV3" target="SETV3"/>
-    </state>
-
-    <state id="SETV3">
-        <onentry>
-            <assign name="var_out_V4" expr="#{b}"/>
+            <dg:assign name="huntPilotPartition" set="partitionA,partitionB,partitionC,partitionD"/>
+            <dg:assign name="huntPilotDN" set="DN-1,DN-2,DN-3,DN-4"/>
+            <dg:assign name="lastRedirectingRoutingReason" set="1111,2222,3333,4444"/>
         </onentry>
         <transition event="end" target="end"/>
     </state>
