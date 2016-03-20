@@ -24,7 +24,7 @@ public class MachineTransformer implements DataTransformer {
         for (Map.Entry<String, String> entry : cr.getDataMap().entrySet()) {
             String value = entry.getValue();
 
-            if (value.equals("#{random_string}")) {
+            if (value.equals("#{random_text}")) {
                 entry.setValue(randomStringUtils.randomAlphabetic(10).toUpperCase());
             }else if (value.equals("#{random_integer}")){
                 entry.setValue(Integer.toString(rand.nextInt()));

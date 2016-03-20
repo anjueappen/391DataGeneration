@@ -30,7 +30,7 @@ public class CSVFileWriter implements DataWriter{
                 "origVideoTransportAddress_IP", "origVideoTransportAddress_Port", "origRSVPAudioStat", "origRSVPVideoStat", "destLegCallIdentifier", "destNodeId", "destSpan", "destIpAddr", "originalCalledPartyNumber", "finalCalledPartyNumber", "finalCalledPartyUnicodeLoginUserID", "destCause_location", "destCause_value", "destPrecedenceLevel", "destMediaTransportAddress_IP", "destMediaTransportAddress_Port", "destMediaCap_payloadCapability", "destMediaCap_maxFramesPerPacket", "destVideoCap_Codec", "destVideoCap_Bandwidth", "destVideoCap_Resolution", "destVideoTransportAddress_IP", "destVideoTransportAddress_Port", "destRSVPAudioStat", "destRSVPVideoStat", "dateTimeConnect", "dateTimeDisconnect", "lastRedirectDn", "pkid", "originalCalledPartyNumberPartition", "NumberPartition", "finalCalledPartyNumberPartition", "lastRedirectDnPartition", "duration", "origDeviceName", "destDeviceName", "origCallTerminationOnBehalfOf", "destCallTerminationOnBehalfOf", "origCalledPartyRedirectOnBehalfOf", "lastRedirectRedirectOnBehalfOf", "origCalledPartyRedirectReason", "lastRedirectRedirectReason", "destConversationID", "globalCallId_ClusterId", "joinOnBehalfOf", "comment", "authCodeDescription", "authorizationLevel", "clientMatterCode", "origDTMFMethod", "destDTMFMethod", "callSecuredStatus", "origConversationID", "origMediaCap_Bandwidth", "destMediaCap_Bandwidth", "authorizationCodeValue", "outpulsedCallingPartyNumber", "outpulsedCalledPartyNumber", "origIpv4v6Addr", "destIpv4v6Addr", "origVideoCap_Codec_Channel2", "origVideoCap_Bandwidth_Channel2", "origVideoCap_Resolution_Channel2", "origVideoTransportAddress_IP_Channel2", "origVideoTransportAddress_Port_Channel2", "origVideoChannel_Role_Channel2", "destVideoCap_Codec_Channel2", "destVideoCap_Bandwidth_Channel2", "destVideoCap_Resolution_Channel2", "destVideoTransportAddress_IP_Channel2", "destVideoTransportAddress_Port_Channel2",
                 "destVideoChannel_Role_Channel2", "IncomingProtocolID", "IncomingProtocolCallRef", "OutgoingProtocolID",
                 "OutgoingProtocolCallRef", "currentRoutingReason", "origRoutingReason", "lastRedirectingRoutingReason", "huntPilotDN", "huntPilotPartition"};
-        columnOrder = new HashMap<String, Integer>();
+        columnOrder = new HashMap<String, Integer>(101);
         int i = 0;
         for(String col: columns){
             columnOrder.put(col, i);
@@ -49,7 +49,6 @@ public class CSVFileWriter implements DataWriter{
         int count = 0;
         for (Map.Entry<String, String> entry : cr.getDataMap().entrySet()) {
             nextLine[columnOrder.get(entry.getKey())] = entry.getValue();
-	        System.out.println(entry.getKey() + " " +columnOrder.get(entry.getKey()));
             count++;
         }
 
