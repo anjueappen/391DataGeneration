@@ -129,6 +129,18 @@
             <dg:assign name="huntPilotDN"  set="#{random_text}"/>
             <dg:assign name="huntPilotPartition"  set="#{random_text}"/>
 
+            <dg:assign name="var_out_V1" set="A,B,C,D,E,F,G,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z"/>
+        </onentry>
+        <transition event="SETV2" target="SETV2"/>
+    </state>
+
+    <state id="SETV2">
+        <onentry>
+            <dg:assign name="var_out_V2" set="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20"/>
+            <assign name="var_out_V3" expr="#{c}"/>
+        </onentry>
+        <transition event="SETV3" target="SETV3"/>
+    </state>
 
         </onentry>
         <transition event="end" target="end"/>

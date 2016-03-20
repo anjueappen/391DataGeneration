@@ -48,10 +48,11 @@ public class CSVFileWriter implements DataWriter{
      */
     public void writeOutput(DataPipe cr) {
         String[] nextLine = new String[cr.getDataMap().entrySet().size()];
-
+	
         int count = 0;
         for (Map.Entry<String, String> entry : cr.getDataMap().entrySet()) {
             nextLine[count] = entry.getValue();
+	
             count++;
         }
 

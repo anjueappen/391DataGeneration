@@ -26,8 +26,10 @@ public class CSVDataGen {
         int numberOfRows = 0;
         try {
             modelFile = args[0];
+	System.out.println(modelFile);
             outputFile = args[1];
             numberOfRows = Integer.valueOf(args[2]);
+		System.out.println("num rows is " + numberOfRows);
         } catch (IndexOutOfBoundsException e) {
             System.out.println("ERROR! Invalid command line arguments, expecting: <scxml model file> "
                     + "<desired csv output file> <desired number of output rows>");
@@ -48,7 +50,7 @@ public class CSVDataGen {
 
         SCXMLEngine engine = new SCXMLEngine();
         engine.setModelByInputFileStream(model);
-        engine.setBootstrapMin(5);
+        engine.setBootstrapMin(1);
 
         DataConsumer consumer = new DataConsumer();
         consumer.addDataTransformer(new MachineTransformer());
@@ -62,7 +64,7 @@ public class CSVDataGen {
         consumer.addDataWriter(writer);
 
         DefaultDistributor dist = new DefaultDistributor();
-        dist.setThreadCount(10);
+        dist.setThreadCount(2);
         dist.setMaxNumberOfLines(numberOfRows);
         dist.setDataConsumer(consumer);
 
