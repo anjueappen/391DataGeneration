@@ -1101,3 +1101,75 @@ java.lang.ArrayIndexOutOfBoundsException: 99
 03-19-2016 22:12:42 72 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
 03-19-2016 22:12:42 72 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
 03-19-2016 22:12:43 999 CSVDataGen.main() (DefaultDistributor:116)	DONE
+03-19-2016 23:17:23 0 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 23:17:23 7 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 23:17:23 7 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 23:17:23 7 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 23:17:23 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 23:17:23 35 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 23:17:23 35 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 23:17:23 34 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 23:17:23 34 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 23:17:23 37 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 23:17:24 1008 Thread-1 (DefaultDistributor:142)	Exiting, search exit flag is true
+03-19-2016 23:17:24 1008 CSVDataGen.main() (DefaultDistributor:116)	DONE
+03-19-2016 23:17:59 0 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 23:17:59 0 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 23:17:59 1 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 23:17:59 0 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 23:17:59 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 23:17:59 28 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 23:17:59 31 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 23:17:59 31 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 23:17:59 31 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 23:17:59 34 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 23:18:00 999 Thread-1 (DefaultDistributor:142)	Exiting, search exit flag is true
+03-19-2016 23:18:00 1000 CSVDataGen.main() (DefaultDistributor:116)	DONE
+03-19-2016 23:22:45 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 23:22:45 2 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 23:22:45 2 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 23:22:45 14 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 23:22:45 3 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 23:22:45 16 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 23:22:45 1 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 23:22:45 17 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 23:22:45 14 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 23:22:45 14 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 23:22:46 1002 Thread-1 (DefaultDistributor:142)	Exiting, search exit flag is true
+03-19-2016 23:22:46 1003 CSVDataGen.main() (DefaultDistributor:116)	DONE
+03-19-2016 23:23:41 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 23:23:41 4 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 23:23:41 1 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 23:23:41 1 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 23:23:41 24 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 23:23:41 3 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 23:23:41 23 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 23:23:41 19 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 23:23:41 18 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 23:23:41 28 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 23:23:42 1001 Thread-1 (DefaultDistributor:142)	Exiting, search exit flag is true
+03-19-2016 23:23:42 1002 CSVDataGen.main() (DefaultDistributor:116)	DONE
+03-19-2016 23:26:39 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 23:26:39 2 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 23:26:39 0 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 23:26:39 1 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 23:26:39 0 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 23:26:39 15 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 23:26:39 15 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 23:26:39 15 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 23:26:39 16 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 23:26:39 17 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 23:26:40 1002 Thread-1 (DefaultDistributor:142)	Exiting, search exit flag is true
+03-19-2016 23:26:40 1002 CSVDataGen.main() (DefaultDistributor:116)	DONE
+03-19-2016 23:27:06 3 pool-2-thread-4 (SearchWorker:54)	pool-2-thread-4 is starting DFS
+03-19-2016 23:27:06 0 pool-2-thread-3 (SearchWorker:54)	pool-2-thread-3 is starting DFS
+03-19-2016 23:27:06 0 pool-2-thread-5 (SearchWorker:54)	pool-2-thread-5 is starting DFS
+03-19-2016 23:27:06 0 pool-2-thread-2 (SearchWorker:54)	pool-2-thread-2 is starting DFS
+03-19-2016 23:27:06 0 pool-2-thread-1 (SearchWorker:54)	pool-2-thread-1 is starting DFS
+03-19-2016 23:27:06 17 pool-2-thread-2 (SearchWorker:56)	pool-2-thread-2 is done with DFS
+03-19-2016 23:27:06 18 pool-2-thread-4 (SearchWorker:56)	pool-2-thread-4 is done with DFS
+03-19-2016 23:27:06 18 pool-2-thread-5 (SearchWorker:56)	pool-2-thread-5 is done with DFS
+03-19-2016 23:27:06 18 pool-2-thread-3 (SearchWorker:56)	pool-2-thread-3 is done with DFS
+03-19-2016 23:27:06 18 pool-2-thread-1 (SearchWorker:56)	pool-2-thread-1 is done with DFS
+03-19-2016 23:27:07 997 Thread-1 (DefaultDistributor:142)	Exiting, search exit flag is true
+03-19-2016 23:27:07 997 CSVDataGen.main() (DefaultDistributor:116)	DONE
