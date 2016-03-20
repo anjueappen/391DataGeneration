@@ -51,7 +51,7 @@ public class CSVFileWriter implements DataWriter{
 
         int count = 0;
         for (Map.Entry<String, String> entry : cr.getDataMap().entrySet()) {
-            nextLine[columnOrder.get(entry.getKey())] = entry.getValue();
+            nextLine[count] = entry.getValue();
             count++;
         }
 
