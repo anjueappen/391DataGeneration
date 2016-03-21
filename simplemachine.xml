@@ -27,7 +27,7 @@
     <state id="A1"><onentry><dg:range name="cdrRecordType"  from="0" to="100" step="1"/></onentry><transition target="A2" event="A2"/></state>
     <state id="A2"><onentry><dg:range name="globalCallID_callManagerId"  from="0" to="100" step="1"/></onentry><transition target="A3" event="A3"/></state>
     <state id="A3"><onentry><dg:range name="globalCallID_callId"   from="0" to="100" step="1"/></onentry><transition target="A4" event="A4"/></state>
-    <state id="A4"><onentry><dg:assign name="origLegCallIdentifier"  set="#{random_integer}"/></onentry><transition target="A5" event="A5"/></state>
+    <state id="A4"><onentry><dg:range name="origLegCallIdentifier"  from="0" to="100" step="1"/></onentry><transition target="A5" event="A5"/></state>
     <state id="A5"><onentry><dg:assign name="dateTimeOrigination"  set="#{random_integer}"/></onentry><transition target="A6" event="A6"/></state>
     <state id="A6"><onentry><dg:assign name="origNodeId"  set="#{random_integer}"/></onentry><transition target="A7" event="A7"/></state>
     <state id="A7"><onentry><dg:assign name="origSpan"  set="#{random_integer}"/></onentry><transition target="A8" event="A8"/></state>
