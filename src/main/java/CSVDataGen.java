@@ -64,7 +64,7 @@ public class CSVDataGen {
         consumer.addDataWriter(writer);
 
         DefaultDistributor dist = new DefaultDistributor();
-        dist.setThreadCount(102);
+        dist.setThreadCount(1000);
         dist.setMaxNumberOfLines(numberOfRows);
         dist.setDataConsumer(consumer);
 
