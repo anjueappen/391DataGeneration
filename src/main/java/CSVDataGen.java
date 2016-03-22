@@ -50,7 +50,7 @@ public class CSVDataGen {
 
         SCXMLEngine engine = new SCXMLEngine();
         engine.setModelByInputFileStream(model);
-        engine.setBootstrapMin(10000);
+        engine.setBootstrapMin(100);
 
         DataConsumer consumer = new DataConsumer();
         consumer.addDataTransformer(new MachineTransformer());
@@ -64,7 +64,7 @@ public class CSVDataGen {
         consumer.addDataWriter(writer);
 
         DefaultDistributor dist = new DefaultDistributor();
-        dist.setThreadCount(1000);
+        dist.setThreadCount(10);
         dist.setMaxNumberOfLines(numberOfRows);
         dist.setDataConsumer(consumer);
 
