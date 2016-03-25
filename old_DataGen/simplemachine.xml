@@ -1,0 +1,132 @@
+<!-- -->
+<!-- Copyright 2014 DataGenerator Contributors -->
+<!-- -->
+<!-- Licensed under the Apache License, Version 2.0 (the "License"); -->
+<!-- you may not use this file except in compliance with the License. -->
+<!-- You may obtain a copy of the License at -->
+<!-- -->
+<!--      http://www.apache.org/licenses/LICENSE-2.0 -->
+<!-- -->
+<!-- Unless required by applicable law or agreed to in writing, software -->
+<!-- distributed under the License is distributed on an "AS IS" BASIS, -->
+<!-- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. -->
+<!-- See the License for the specific language governing permissions and -->
+<!-- limitations under the License. -->
+<!-- -->
+
+<scxml xmlns="http://www.w3.org/2005/07/scxml"
+       xmlns:cs="http://commons.apache.org/scxml"
+       xmlns:dg="org.finra.datagenerator"
+       version="1.0"
+       initial="start">
+
+    <state id="start">
+        <transition event="A1" target="A1"/>
+    </state>
+
+    <state id="A1"><onentry><dg:assign name="cdrRecordType"  set="479,61,124,827,896,895,150,732,391,141,679,566,130,795,342,451,780,818,119,737,764,11,98,686,984,634,670,636,780,831,85,997,175,948,681,752,560,850,738,100,260,773,150,554,79,308,805,589,566,268,857,6,765,205,572,151,682,408,380,370,851,952,842,467,314,126,953,412,983,523,173,857,569,790,411,791,530,832,55,566,668,693,86,757,641,720,586,845,212,925,176,432,658,816,99,750,733,116,296,737"/></onentry><transition target="A2" event="A2"/></state>
+    <state id="A2"><onentry><dg:assign name="globalCallID_callManagerId"  set="-807,-42,-337,-359,-267,-206,-504,-201,-460,-334,-802,-764,-758,-213,-987,-979,-860,-357,-916,-355,-617,-512,-665,-684,-307,-723,-890,-77,-411,-71,-380,-915,-910,-217,-646,-203,-7,-834,-268,-206,-623,-910,-889,-832,-40,-351,-617,-897,-705,-651,-108,-287,-205,-149,-332,-773,-46,-260,-82,-582,-59,-196,-382,-568,-192,-542,-802,-513,-66,-876,-403,-493,-245,-402,-705,-422,-474,-98,-234,-384,-761,-726,-27,-893,-699,-995,-762,-669,-883,-231,-50,-256,-75,-357,-950,-242,-27,-593,-518,-893"/></onentry><transition target="A3" event="A3"/></state>
+    <state id="A3"><onentry><dg:assign name="globalCallID_callId"   set="882,787,895,743,382,432,406,474,286,288,733,949,458,644,111,906,947,955,284,974,219,619,233,234,393,357,537,912,932,498,497,603,219,652,313,142,266,281,974,957,949,422,129,986,459,126,892,629,899,651,677,745,628,595,792,977,979,178,616,739,528,705,192,850,727,526,133,242,672,520,921,728,212,885,793,974,720,952,107,883,391,109,449,605,940,263,626,502,188,408,436,874,815,903,236,650,387,961,698,924"/></onentry><transition target="A4" event="A4"/></state>
+    <state id="A4"><onentry><dg:assign name="origLegCallIdentifier"  set="351,-322,-453,-201,-268,-421,407,-326,90,36,97,-327,-365,-180,233,-189,-36,-418,-405,353,25,200,-211,-478,140,252,271,-98,369,-8,-201,2,-378,252,152,-425,-114,-15,23,6,-98,76,493,-439,368,277,465,330,93,-168,-138,-467,59,-108,-346,-472,-220,429,-490,-33,-342,370,89,-445,-465,96,-421,67,79,-330,-139,-353,303,184,-91,346,97,-331,66,-495,-316,294,-445,63,-394,-56,-401,-117,208,491,364,79,348,369,353,14,77,168,-123,472"/></onentry><transition target="A5" event="A5"/></state>
+    <state id="A5"><onentry><dg:assign name="dateTimeOrigination"  set="-173,423,-321,422,29,-490,291,-221,-55,175,-273,-345,-434,-396,-288,-389,-336,371,-101,-370,-317,55,199,208,236,-379,-25,234,-382,-362,-104,-401,-116,-77,-324,-370,-185,-419,490,-84,-37,-26,389,37,145,15,430,11,-315,118,-351,-128,-39,210,283,424,-103,235,-114,8,113,-232,86,-379,250,293,384,487,-318,-296,246,-246,391,172,261,-4,-454,-137,378,193,-291,-240,-218,69,345,167,309,-130,-416,-62,-441,387,-55,428,57,165,-403,382,257,-198"/></onentry><transition target="A6" event="A6"/></state>
+    <state id="A6"><onentry><dg:assign name="origNodeId"  set="3225,2616,3352,2060,4710,2420,3396,4451,3135,1958,3962,1573,1503,2548,3004,1951,4942,4233,2016,1308,3550,1302,2603,3841,3924,1667,3285,3985,4580,2545,4808,2806,2863,4507,4016,3865,2160,3076,4357,3335,3265,2305,1056,3514,3388,3101,3351,3834,2579,3199,1782,4380,1948,1295,4514,4318,4463,1342,1353,3734,2433,3168,4821,3925,4474,4221,3459,1339,2239,2861,2303,4085,2835,2191,4626,2591,3251,2707,2039,3890,2210,4653,3280,3027,2215,4589,1271,2544,4237,2179,1553,3080,3993,3063,4625,3605,1106,1136,2444,3509"/></onentry><transition target="A7" event="A7"/></state>
+    <state id="A7"><onentry><dg:assign name="origSpan"  set="#{random_integer}"/></onentry><transition target="A8" event="A8"/></state>
+    <state id="A8"><onentry><dg:assign name="origIpAddr"  set="#{random_integer}"/></onentry><transition target="A9" event="A9"/></state>
+    <state id="A9"><onentry><dg:assign name="callingPartyNumber"  set="d911zlks,65fw7vh9,b3604hd6,lzcs9ho4,ng5i4sly,qsd0fhgi,05g99041,dnavrlre,twkds9yy,vews3kh6,1h4r5b78,vsw648s8,igif6wr9,6jsupn7z,58tuc49e,vhdpj5rj,ium7cfhc,n0nzqt94,6grp888b,luukaxht,ho64qr5c,vm25gqfi,wegdhyut,4esa4ntf,9fipsno1,uwd2l1mb,g822lr65,h9tnlw24,judskrta,l7gzuw4g,xvbj3nmb,3e1gxg3z,zdf3clh6,3nmn8722,24deaclr,tazonnjj,0ifmjwm0,q6bkuj7l,6klcn4f2,0biig6o5,9ziqh5r9,bofalyxe,bb4u8ren,rye8mo7w,ekybct3u,5mjklutv,dz0rfs30,8yp4vwxk,wj905n1i,m40uj7he,z3ejjig7,3mlpb8l4,oe8gz8el,ss5qz858,109z45of,v18vfqkt,0tlxe7b7,92vwqwgu,zk50ytru,pvd06dzx,uer7zamv,tsgpdwt7,onjso2s4,fez1jgvy,i9r4hvuc,blocbz0b,oncxb9pw,khpo3cx1,q2absyp9,tle1of9a,bzl48qor,qvn0sf2m,p9p97dgx,9fwpbw4v,ms26t9a4,ijvj39fd,e5fr36hv,exssceqb,oc09trbg,z9p0ykcw,9ni8pahb,wpyej3mn,ubpzny0a,upp9j1w7,3pxefix6,n3z3do5v,7457t40v,2q1qd8h6,rrak73i9,5rsvjr5k,rl0b4ts8,d2zxxzve,a24zdv7m,9hu6dv4q,vgkm0u5f,ua7rop2r,d6pcaih9,54s4wwd8,frfm0o4z,hd6akqgc"/></onentry><transition target="A10" event="A10"/></state>
+    <state id="A10"><onentry><dg:assign name="callingPartyUnicodeLoginUserID"  set="ZdZgIIeTmR,rcxaVLpheZ,t13DjsR8Ay,C0AIVDyUmp,TgbwQ1DVJj,74Ez2RNxEE,KgNqxV7BPP,1Ju270kgfb,i7z01rp9XK,z0zkBwEkd8,Zgf7623LgY,ZTge89Fk3Y,TkMhN61asz,isDyB3SkW0,fH6hYfpWBk,GFAy49GVdc,kyQOm8L1Dx,IxqLRe9NWS,CJkI0kdzOt,esqr8w8rnh,3k4LU19aAt,RnLDJ53ruF,wmjeV4Q8sx,qSwFol8iA4,LLRNx0gw8P,eRhiUAbqp9,QQltljqk1J,1mskhqZEtS,YtpHeDfJ0b,4cL6WKObbZ,xdfBzgkqdy,q6O60guhv9,KEzanF4ukU,lEIiPL9mWu,AKjeq9zYRv,y3CAazhRdI,5p5CmCW1YM,MZYdgFosBm,4nHYi2IRt1,8OZwdrRalR,Iybs81bMhv,zXQfmrKIoT,B8wp93YPiI,umekEDPXsy,PSZmxXHMes,jHF4bpQPPK,RQXCfmKLUY,ruMQYDFLPK,HlOP8U1TCu,UneyyEeONS,7YVKQ0CggO,LTFE9OOi9f,iWVDTNRJn0,kM9oxX5oky,sEtCRH8BWM,dLEkfgLwDM,OyFKxIO7GC,CrR3IGFiU1,G9efW1nMFZ,M7yeiW1jbJ,Z2Di462SMC,KFqG6WC95y,gxf9Wbl4kW,pmsFTJ4mMD,1cpLK0HOyi,OVFQBhMcOq,ej3ONO0zV7,ZHdKR204av,4y4uAswUoV,Hjp9phQbZA,VgvMgm67BN,dxVSYoEHbG,G2bcYAh2By,h7D1YejxJh,K863XFSHKL,orDjVKSw6U,Uqxdw1Bthn,j1gsyz9xR3,if7wvyxFS2,MUiNRORA8B,fLuo5uNyqU,wNZim8EFLo,n8Qe3jemZS,Cx87tz8GxS,twVtLjDdeI,KepMBcqbFN,N5PrtaaCK2,kBUVgB8TGV,fZMFpVY9mF,M4MgjmiVZM,ZxACOiUFTQ,in39q9HeoV,6YFx1Or5oG,yKGucG9uuI,fNyLRNdIsU,XmRaQ4KUmK,BwbFVpyAm1,yVxnD4pbaL,FZmsVBFiVV,JBDhGI71PS"/></onentry><transition target="A11" event="A11"/></state>
+    <state id="A11"><onentry><dg:assign name="origCause_location" set="0.90,0.37,0.40,0.94,0.18,0.98,0.32,0.34,0.80,0.99,0.14,0.02,0.43,0.74,0.01,0.49,0.65,0.58,1.00,0.88,0.18,0.51,0.81,0.20,0.88,0.16,0.15,0.69,0.93,0.89,0.46,0.39,0.58,0.19,0.49,0.13,0.63,0.45,0.92,0.01,0.59,0.28,0.52,0.12,0.96,0.22,0.87,0.02,0.10,0.36,0.77,0.62,0.81,0.16,0.10,0.16,0.12,0.91,0.94,0.57,0.86,0.57,0.93,0.24,0.14,0.80,0.49,0.52,0.29,0.82,0.04,0.88,0.11,0.63,0.89,0.81,0.03,0.48,0.78,0.26,0.57,0.12,0.21,0.79,0.80,0.02,0.82,0.08,0.79,0.11,0.52,0.93,0.22,0.04,0.72,0.24,0.46,0.02,0.23,0.56"/></onentry><transition target="A12" event="A12"/></state>
+    <state id="A12"><onentry><dg:assign name="origCause_value"  set="0.4293,0.4855,0.3319,0.5848,0.3089,0.8442,0.1829,0.7654,0.6423,0.5513,0.9182,0.4042,0.1554,0.5770,0.0200,0.1576,0.4778,0.5186,0.2834,0.9357,0.0361,0.1983,0.3367,0.3094,0.1529,0.8329,0.4665,0.2039,0.8869,0.6993,0.1338,0.2930,0.2717,0.4938,0.5121,0.8542,0.0220,0.6335,0.4507,0.5537,0.2202,0.1507,0.2856,0.4935,0.1446,0.9543,0.5764,0.6085,0.9964,0.3101,0.7720,0.4421,0.1816,0.3995,0.5331,0.1686,0.0044,0.4042,0.4324,0.4818,0.6439,0.0270,0.4698,0.1014,0.8498,0.4359,0.2780,0.7793,0.5615,0.7137,0.6293,0.5003,0.3623,0.7413,0.8591,0.0824,0.4159,0.7304,0.5943,0.3030,0.6356,0.2436,0.6683,0.0713,0.1637,0.1267,0.0704,0.4675,0.7887,0.2505,0.9524,0.8205,0.0509,0.7339,0.0742,0.5199,0.7242,0.0024,0.1184,0.7921"/></onentry><transition target="A13" event="A13"/></state>
+    <state id="A13"><onentry><dg:assign name="origPrecedenceLevel"  set="#{random_decimal}"/></onentry><transition target="A14" event="A14"/></state>
+    <state id="A14"><onentry><dg:assign name="origMediaTransportAddress_IP"  set="#{random_integer}"/></onentry><transition target="A15" event="A15"/></state>
+    <state id="A15"><onentry><dg:assign name="origMediaTransportAddress_Port"  set="#{random_integer}"/></onentry><transition target="A16" event="A16"/></state>
+    <state id="A16"><onentry><dg:assign name="origMediaCap_payloadCapability"  set="#{random_integer}"/></onentry><transition target="A17" event="A17"/></state>
+    <state id="A17"><onentry><dg:assign name="origMediaCap_maxFramesPerPacket"  set="#{random_integer}"/></onentry><transition target="A18" event="A18"/></state>
+    <state id="A18"><onentry><dg:assign name="origVideoCap_Codec"  set="#{random_decimal}"/></onentry><transition target="A19" event="A19"/></state>
+    <state id="A19"><onentry><dg:assign name="origVideoCap_Bandwidth"  set="#{random_integer}"/></onentry><transition target="A20" event="A20"/></state>
+    <state id="A20"><onentry><dg:assign name="origVideoCap_Resolution"  set="#{random_decimal}"/></onentry><transition target="A21" event="A21"/></state>
+    <state id="A21"><onentry><dg:assign name="origVideoTransportAddress_IP"  set="#{random_integer}"/></onentry><transition target="A22" event="A22"/></state>
+    <state id="A22"><onentry><dg:assign name="origVideoTransportAddress_Port"  set="#{random_integer}"/></onentry><transition target="A23" event="A23"/></state>
+    <state id="A23"><onentry><dg:assign name="origRSVPAudioStat"  set="#{random_decimal}"/></onentry><transition target="A24" event="A24"/></state>
+    <state id="A24"><onentry><dg:assign name="origRSVPVideoStat"  set="#{random_decimal}"/></onentry><transition target="A25" event="A25"/></state>
+    <state id="A25"><onentry><dg:assign name="destLegCallIdentifier"  set="#{random_integer}"/></onentry><transition target="A26" event="A26"/></state>
+    <state id="A26"><onentry><dg:assign name="destNodeId"  set="#{random_integer}"/></onentry><transition target="A27" event="A27"/></state>
+    <state id="A27"><onentry><dg:assign name="destSpan"  set="#{random_integer}"/></onentry><transition target="A28" event="A28"/></state>
+    <state id="A28"><onentry><dg:assign name="destIpAddr"  set="#{random_integer}"/></onentry><transition target="A29" event="A29"/></state>
+    <state id="A29"><onentry><dg:assign name="originalCalledPartyNumber"  set="#{random_text}"/></onentry><transition target="A30" event="A30"/></state>
+    <state id="A30"><onentry><dg:assign name="finalCalledPartyNumber"  set="#{random_text}"/></onentry><transition target="A31" event="A31"/></state>
+    <state id="A31"><onentry><dg:assign name="finalCalledPartyUnicodeLoginUserID"  set="#{random_text}"/></onentry><transition target="A32" event="A32"/></state>
+    <state id="A32"><onentry><dg:assign name="destCause_location"  set="#{random_decimal}"/></onentry><transition target="A33" event="A33"/></state>
+    <state id="A33"><onentry><dg:assign name="destCause_value"  set="#{random_decimal}"/></onentry><transition target="A34" event="A34"/></state>
+    <state id="A34"><onentry><dg:assign name="destPrecedenceLevel"  set="#{random_decimal}"/></onentry><transition target="A35" event="A35"/></state>
+    <state id="A35"><onentry><dg:assign name="destMediaTransportAddress_IP"  set="#{random_integer}"/></onentry><transition target="A36" event="A36"/></state>
+    <state id="A36"><onentry><dg:assign name="destMediaTransportAddress_Port"  set="#{random_integer}"/></onentry><transition target="A37" event="A37"/></state>
+    <state id="A37"><onentry><dg:assign name="destMediaCap_payloadCapability"  set="#{random_integer}"/></onentry><transition target="A38" event="A38"/></state>
+    <state id="A38"><onentry><dg:assign name="destMediaCap_maxFramesPerPacket"  set="#{random_integer}"/></onentry><transition target="A39" event="A39"/></state>
+    <state id="A39"><onentry><dg:assign name="destVideoCap_Codec"  set="#{random_decimal}"/></onentry><transition target="A40" event="A40"/></state>
+    <state id="A40"><onentry><dg:assign name="destVideoCap_Bandwidth"  set="#{random_integer}"/></onentry><transition target="A41" event="A41"/></state>
+    <state id="A41"><onentry><dg:assign name="destVideoCap_Resolution"  set="#{random_decimal}"/></onentry><transition target="A42" event="A42"/></state>
+    <state id="A42"><onentry><dg:assign name="destVideoTransportAddress_IP"  set="#{random_integer}"/></onentry><transition target="A43" event="A43"/></state>
+    <state id="A43"><onentry><dg:assign name="destVideoTransportAddress_Port"  set="#{random_integer}"/></onentry><transition target="A44" event="A44"/></state>
+    <state id="A44"><onentry><dg:assign name="destRSVPAudioStat"  set="#{random_decimal}"/></onentry><transition target="A45" event="A45"/></state>
+    <state id="A45"><onentry><dg:assign name="destRSVPVideoStat"  set="#{random_decimal}"/></onentry><transition target="A46" event="A46"/></state>
+    <state id="A46"><onentry><dg:assign name="dateTimeConnect"  set="#{random_integer}"/></onentry><transition target="A47" event="A47"/></state>
+    <state id="A47"><onentry><dg:assign name="dateTimeDisconnect"  set="#{random_integer}"/></onentry><transition target="A48" event="A48"/></state>
+    <state id="A48"><onentry><dg:assign name="lastRedirectDn"  set="#{random_text}"/></onentry><transition target="A49" event="A49"/></state>
+    <state id="A49"><onentry><dg:assign name="pkid"  set="#{random_text}"/></onentry><transition target="A50" event="A50"/></state>
+    <state id="A50"><onentry><dg:assign name="originalCalledPartyNumberPartition"  set="#{random_text}"/></onentry><transition target="A51" event="A51"/></state>
+    <state id="A51"><onentry><dg:assign name="NumberPartition"  set="#{random_text}"/></onentry><transition target="A52" event="A52"/></state>
+    <state id="A52"><onentry><dg:assign name="finalCalledPartyNumberPartition"  set="#{random_text}"/></onentry><transition target="A53" event="A53"/></state>
+    <state id="A53"><onentry><dg:assign name="lastRedirectDnPartition"  set="#{random_text}"/></onentry><transition target="A54" event="A54"/></state>
+    <state id="A54"><onentry><dg:assign name="duration"  set="#{random_integer}"/></onentry><transition target="A55" event="A55"/></state>
+    <state id="A55"><onentry><dg:assign name="origDeviceName"  set="#{random_text}"/></onentry><transition target="A56" event="A56"/></state>
+    <state id="A56"><onentry><dg:assign name="destDeviceName"  set="#{random_text}"/></onentry><transition target="A57" event="A57"/></state>
+    <state id="A57"><onentry><dg:assign name="origCallTerminationOnBehalfOf"  set="#{random_integer}"/></onentry><transition target="A58" event="A58"/></state>
+    <state id="A58"><onentry><dg:assign name="destCallTerminationOnBehalfOf"  set="#{random_integer}"/></onentry><transition target="A59" event="A59"/></state>
+    <state id="A59"><onentry><dg:assign name="origCalledPartyRedirectOnBehalfOf"  set="#{random_integer}"/></onentry><transition target="A60" event="A60"/></state>
+    <state id="A60"><onentry><dg:assign name="lastRedirectRedirectOnBehalfOf"  set="#{random_integer}"/></onentry><transition target="A61" event="A61"/></state>
+    <state id="A61"><onentry><dg:assign name="origCalledPartyRedirectReason"  set="#{random_integer}"/></onentry><transition target="A62" event="A62"/></state>
+    <state id="A62"><onentry><dg:assign name="lastRedirectRedirectReason"  set="#{random_integer}"/></onentry><transition target="A63" event="A63"/></state>
+    <state id="A63"><onentry><dg:assign name="destConversationID"  set="#{random_integer}"/></onentry><transition target="A64" event="A64"/></state>
+    <state id="A64"><onentry><dg:assign name="globalCallId_ClusterId"  set="#{random_text}"/></onentry><transition target="A65" event="A65"/></state>
+    <state id="A65"><onentry><dg:assign name="joinOnBehalfOf"   set="#{random_integer}"/></onentry><transition target="A66" event="A66"/></state>
+    <state id="A66"><onentry><dg:assign name="comment"  set="#{random_text}"/></onentry><transition target="A67" event="A67"/></state>
+    <state id="A67"><onentry><dg:assign name="authCodeDescription"  set="#{random_text}"/></onentry><transition target="A68" event="A68"/></state>
+    <state id="A68"><onentry><dg:assign name="authorizationLevel"  set="#{random_integer}"/></onentry><transition target="A69" event="A69"/></state>
+    <state id="A69"><onentry><dg:assign name="clientMatterCode"  set="#{random_text}"/></onentry><transition target="A70" event="A70"/></state>
+    <state id="A70"><onentry><dg:assign name="origDTMFMethod"  set="#{random_integer}"/></onentry><transition target="A71" event="A71"/></state>
+    <state id="A71"><onentry><dg:assign name="destDTMFMethod"  set="#{random_integer}"/></onentry><transition target="A72" event="A72"/></state>
+    <state id="A72"><onentry><dg:assign name="callSecuredStatus"  set="#{random_integer}"/></onentry><transition target="A73" event="A73"/></state>
+    <state id="A73"><onentry><dg:assign name="origConversationID"  set="#{random_integer}"/></onentry><transition target="A74" event="A74"/></state>
+    <state id="A74"><onentry><dg:assign name="origMediaCap_Bandwidth"  set="#{random_integer}"/></onentry><transition target="A75" event="A75"/></state>
+    <state id="A75"><onentry><dg:assign name="destMediaCap_Bandwidth"  set="#{random_integer}"/></onentry><transition target="A76" event="A76"/></state>
+    <state id="A76"><onentry><dg:assign name="authorizationCodeValue"  set="#{random_text}"/></onentry><transition target="A77" event="A77"/></state>
+    <state id="A77"><onentry><dg:assign name="outpulsedCallingPartyNumber"  set="#{random_text}"/></onentry><transition target="A78" event="A78"/></state>
+    <state id="A78"><onentry><dg:assign name="outpulsedCalledPartyNumber"  set="#{random_text}"/></onentry><transition target="A79" event="A79"/></state>
+    <state id="A79"><onentry><dg:assign name="origIpv4v6Addr"  set="#{random_text}"/></onentry><transition target="A80" event="A80"/></state>
+    <state id="A80"><onentry><dg:assign name="destIpv4v6Addr"  set="#{random_text}"/></onentry><transition target="A81" event="A81"/></state>
+    <state id="A81"><onentry><dg:assign name="origVideoCap_Codec_Channel2"  set="#{random_decimal}"/></onentry><transition target="A82" event="A82"/></state>
+    <state id="A82"><onentry><dg:assign name="origVideoCap_Bandwidth_Channel2"  set="#{random_integer}"/></onentry><transition target="A83" event="A83"/></state>
+    <state id="A83"><onentry><dg:assign name="origVideoCap_Resolution_Channel2"  set="#{random_decimal}"/></onentry><transition target="A84" event="A84"/></state>
+    <state id="A84"><onentry><dg:assign name="origVideoTransportAddress_IP_Channel2"  set="#{random_integer}"/></onentry><transition target="A85" event="A85"/></state>
+    <state id="A85"><onentry><dg:assign name="origVideoTransportAddress_Port_Channel2"  set="#{random_integer}"/></onentry><transition target="A86" event="A86"/></state>
+    <state id="A86"><onentry><dg:assign name="origVideoChannel_Role_Channel2"  set="#{random_integer}"/></onentry><transition target="A87" event="A87"/></state>
+    <state id="A87"><onentry><dg:assign name="destVideoCap_Codec_Channel2"  set="#{random_decimal}"/></onentry><transition target="A88" event="A88"/></state>
+    <state id="A88"><onentry><dg:assign name="destVideoCap_Bandwidth_Channel2"  set="#{random_integer}"/></onentry><transition target="A89" event="A89"/></state>
+    <state id="A89"><onentry><dg:assign name="destVideoCap_Resolution_Channel2"  set="#{random_decimal}"/></onentry><transition target="A90" event="A90"/></state>
+    <state id="A90"><onentry><dg:assign name="destVideoTransportAddress_IP_Channel2"  set="#{random_integer}"/></onentry><transition target="A91" event="A91"/></state>
+    <state id="A91"><onentry><dg:assign name="destVideoTransportAddress_Port_Channel2"  set="#{random_integer}"/></onentry><transition target="A92" event="A92"/></state>
+    <state id="A92"><onentry><dg:assign name="destVideoChannel_Role_Channel2"  set="#{random_integer}"/></onentry><transition target="A93" event="A93"/></state>
+    <state id="A93"><onentry><dg:assign name="IncomingProtocolID"  set="#{random_integer}"/></onentry><transition target="A94" event="A94"/></state>
+    <state id="A94"><onentry><dg:assign name="IncomingProtocolCallRef"  set="#{random_text}"/></onentry><transition target="A95" event="A95"/></state>
+    <state id="A95"><onentry><dg:assign name="OutgoingProtocolID"  set="#{random_integer}"/></onentry><transition target="A96" event="A96"/></state>
+    <state id="A96"><onentry><dg:assign name="OutgoingProtocolCallRef"  set="#{random_text}"/></onentry><transition target="A97" event="A97"/></state>
+    <state id="A97"><onentry><dg:assign name="currentRoutingReason"  set="#{random_integer}"/></onentry><transition target="A98" event="A98"/></state>
+    <state id="A98"><onentry><dg:assign name="origRoutingReason"  set="#{random_integer}"/></onentry><transition target="A99" event="A99"/></state>
+    <state id="A99"><onentry><dg:assign name="lastRedirectingRoutingReason"  set="#{random_integer}"/></onentry><transition target="A100" event="A100"/></state>
+    <state id="A100"><onentry><dg:assign name="huntPilotDN"  set="#{random_text}"/></onentry><transition target="A101" event="A101"/></state>
+    <state id="A101"><onentry><dg:assign name="huntPilotPartition"  set="#{random_text}"/></onentry><transition target="end" event="end"/></state>
+
+    <state id="end">
+        <!-- We're done -->
+    </state>
+</scxml>
