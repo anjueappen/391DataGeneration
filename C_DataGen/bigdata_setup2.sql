@@ -1,7 +1,3 @@
-/*
- *  A sample table struecture for storing the CDR
- *
- */
 cdrRecordType random_at_most(10),
 globalCallID_callManagerId INT,
 globalCallID_callId INT,
@@ -103,7 +99,7 @@ origRoutingReason INT,
 lastRedirectingRoutingReason INT,
 huntPilotDN STRING,
 huntPilotPartition STRING
-)
-ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ','
-STORED AS TEXTFILE;
+
+
+
+
