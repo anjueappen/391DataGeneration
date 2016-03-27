@@ -92,9 +92,9 @@ int main(int argc, char **argv) {
 /*destNodeId*/                                  printf("%ld, ", INT);
 /*destSpan*/                                    printf("%ld, ", INT);
 /*destIpAddr*/                                  printf("%ld, ", INT);
-/*originalCalledPartyNumber*/                   printf("%s, ", STRING);
+/*originalCalledPartyNumber*/                   printf("780%ld, ", phone_number());
 /*finalCalledPartyNumber*/                      printf("780%ld, ", phone_number()); //must be read in as string for sstables
-/*finalCalledPartyUnicodeLoginUserID*/          printf("780%ld, ", phone_number()); //must be read in as string for sstables
+/*finalCalledPartyUnicodeLoginUserID*/          printf("%s, ", STRING); //must be read in as string for sstables
 /*destCause_location*/                          printf("%lf, ", DECIMAL);
 /*destCause_value*/                             printf("%lf, ", DECIMAL);
 /*destPrecedenceLevel*/                         printf("%lf, ", DECIMAL);
