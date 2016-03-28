@@ -33,7 +33,7 @@ long random_at_most(long max) {
 
 long timestamp(){
     //srand(time(NULL));
-    return rand() % 9000000000 + 1000000000;
+    return rand() % 90000000 + 10000000;
 }
 
 long phone_number(){
