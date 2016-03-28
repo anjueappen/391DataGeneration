@@ -107,7 +107,7 @@ int main(int argc, char **argv) {
 /*destVideoCap_Resolution*/                     printf("\"%lf\",", DECIMAL);
 /*destVideoTransportAddress_IP*/                printf("\"%ld\",", INT);
 /*destVideoTransportAddress_Port*/              printf("\"%ld\",", INT);
-/*destRSVPAudioStat*/                           printf("\"%lf\",", DECIMAL);
+/*destRSVPAudioStat*/                           printf("\"%ld\",", INT);
 /*destRSVPVideoStat*/                           printf("\"%lf\",", DECIMAL);
 /*dateTimeConnect*/                             printf("\"%ld\",", timestamp());
 /*dateTimeDisConnect*/                          printf("\"%ld\",", timestamp());
