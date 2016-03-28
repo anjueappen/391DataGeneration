@@ -80,7 +80,7 @@ int main(int argc, char **argv) {
 /*origMediaTransportAddress_IP*/                printf("\"%ld\",", INT);
 /*origMediaTransportAddress_Port*/              printf("\"%ld\",", INT);
 /*origMediaCap_payloadCapability*/              printf("\"%ld\",", INT);
-/*origMediaCap_maxFramesPerPacket*/             printf("\"%ld\",", INT);
+/*origMediaCap_maxFramesPerPacket*/             printf("\"%ld\",", 5);
 /*origVideoCap_Codec*/                          printf("\"%lf\",", DECIMAL);
 /*origVideoCap_Bandwidth*/                      printf("\"%ld\",", INT);
 /*origVideoCap_Resolution*/                     printf("\"%lf\",", DECIMAL);
@@ -107,7 +107,7 @@ int main(int argc, char **argv) {
 /*destVideoCap_Resolution*/                     printf("\"%lf\",", DECIMAL);
 /*destVideoTransportAddress_IP*/                printf("\"%ld\",", INT);
 /*destVideoTransportAddress_Port*/              printf("\"%ld\",", INT);
-/*destRSVPAudioStat*/                           printf("\"%ld\",", INT);
+/*destRSVPAudioStat*/                           printf("\"%l\",", INT);
 /*destRSVPVideoStat*/                           printf("\"%lf\",", DECIMAL);
 /*dateTimeConnect*/                             printf("\"%ld\",", timestamp());
 /*dateTimeDisConnect*/                          printf("\"%ld\",", timestamp());
