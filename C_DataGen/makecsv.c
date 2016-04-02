@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/time.h>
 
 const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const long INT = 1234567;
@@ -62,6 +63,10 @@ int main(int argc, char **argv) {
 
     int row;
     srand(time(NULL));
+		
+		struct timeval  tv1, tv2;
+		gettimeofday(&tv1, NULL);
+		
     for(row = 0; row < atoi(argv[1]); row++) {
             /* Default values are "row x col" */
 /*cdrRecordType*/                               printf("\"%ld.0\",", random_at_most(10));
@@ -161,11 +166,16 @@ int main(int argc, char **argv) {
 /*OutgoingProtocolID*/                          printf("\"%ld\",", INT);
 /*OutgoingProtocolCallRef*/                     printf("\"%s\",", STRING);
 /*currentRoutingReason*/                        printf("\"%ld\",", INT);
-/*origRoutingReason*/                           printf("\"%ld\",", INT);
 /*lastRedirectingRoutingReason*/                printf("\"%ld\",", INT);
-/*huntPilotDN*/                                 printf("\"%s\",", STRING);
-/*huntPilotPartition*/                          printf("\"%s\"\n", STRING);
+/*areaCode*/                                 		printf("\"%ld\",", random_at_most(999));
+/*originCountryCode*/                           printf("\"%ld\",", random_at_most(99));
+/*destCountryCode*/                          		printf("\"%ld\"\n", random_at_most(99));
 
                                                        }
-    return 0;
+    
+		gettimeofday(&tv2, NULL);
+		fprintf (stderr,"Total time = %f seconds\n",
+			(double) (tv2.tv_usec - tv1.tv_usec) / 1000000 +
+			(double) (tv2.tv_sec - tv1.tv_sec));
+		return 0;
 }
