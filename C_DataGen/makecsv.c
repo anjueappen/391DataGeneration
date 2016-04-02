@@ -66,7 +66,7 @@ int main(int argc, char **argv) {
 		
 		struct timeval  tv1, tv2;
 		gettimeofday(&tv1, NULL);
-		
+	
     for(row = 0; row < atoi(argv[1]); row++) {
             /* Default values are "row x col" */
 /*cdrRecordType*/                               printf("\"%ld.0\",", random_at_most(10));
@@ -97,8 +97,8 @@ int main(int argc, char **argv) {
 /*destNodeId*/                                  printf("\"%ld\",", INT);
 /*destSpan*/                                    printf("\"%ld\",", INT);
 /*destIpAddr*/                                  printf("\"%ld\",", INT);
-/*originalCalledPartyNumber*/                   printf("\"780%ld\",", phone_number());
-/*finalCalledPartyNumber*/                      printf("\"780%ld\",", phone_number()); //must be read in as string for sstables
+/*originalCalledPartyNumber*/                   printf("\"%ld\",", phone_number());
+/*finalCalledPartyNumber*/                      printf("\"%ld\",", phone_number()); //must be read in as string for sstables
 /*finalCalledPartyUnicodeLoginUserID*/          printf("\"%s\",", STRING); //must be read in as string for sstables
 /*destCause_location*/                          printf("\"%lf\",", DECIMAL);
 /*destCause_value*/                             printf("\"%lf\",", DECIMAL);
@@ -140,7 +140,7 @@ int main(int argc, char **argv) {
 /*clientMatterCode*/                            printf("\"%s\",", STRING);
 /*origDTMFMethod*/                              printf("\"%ld\",", INT);
 /*destDTMFMethod*/                              printf("\"%ld\",", INT);
-/*callSecuredStatus*/                           printf("\"%ld\",", INT);
+/*callSecuredStatus*/                           printf("\"%ld\",", random_at_most(2));
 /*origConversationID*/                          printf("\"%ld\",", INT);
 /*origMediaCap_Bandwidth*/                      printf("\"%ld\",", INT);
 /*destMediaCap_Bandwidth*/                      printf("\"%ld\",", INT);
@@ -167,7 +167,7 @@ int main(int argc, char **argv) {
 /*OutgoingProtocolCallRef*/                     printf("\"%s\",", STRING);
 /*currentRoutingReason*/                        printf("\"%ld\",", INT);
 /*lastRedirectingRoutingReason*/                printf("\"%ld\",", INT);
-/*areaCode*/                                 		printf("\"%ld\",", random_at_most(999));
+/*areaCode*/                                 		printf("\"7%ld\",", random_at_most(99));
 /*originCountryCode*/                           printf("\"%ld\",", random_at_most(99));
 /*destCountryCode*/                          		printf("\"%ld\"\n", random_at_most(99));
 
