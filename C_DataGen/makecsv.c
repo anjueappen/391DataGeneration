@@ -63,11 +63,14 @@ int main(int argc, char **argv) {
 
     int row;
     srand(time(NULL));
-		
-		struct timeval  tv1, tv2;
-		gettimeofday(&tv1, NULL);
-	
+	struct timeval  tv1, tv2;
+	gettimeofday(&tv1, NULL);
+
+	int guaranteedPN[3] = {4411299,3231283,9901234};
+    float epsilon = 0.2;
     for(row = 0; row < atoi(argv[1]); row++) {
+            float r = ((double) rand() / (RAND_MAX));
+            int area_code = random_at_most(99);
             /* Default values are "row x col" */
 /*cdrRecordType*/                               printf("\"%ld.0\",", random_at_most(10));
 /*globalCallID_callManagerId*/                  printf("\"%ld\",", INT);
@@ -77,7 +80,10 @@ int main(int argc, char **argv) {
 /*origNodeId*/                                  printf("\"%ld\",", INT);
 /*origSpan*/                                    printf("\"%ld\",", INT);
 /*origIpAddr*/                                  printf("\"%ld\",", INT);
-/*callingPartyNumber*/                          printf("\"%ld\",", phone_number());
+                                                if (r < epsilon)
+/*callingPartyNumber*/                              printf("\"780%d\",", guaranteedPN[row%3]);
+                                                else
+                                                    printf("\"7%d%d\",", area_code, phone_number());
 /*callingPartyUnicodeLoginUserID*/              printf("\"%s\",", STRING);
 /*origCause_location*/                          printf("\"%lf\",", DECIMAL);
 /*origCause_value*/                             printf("\"%lf\",", DECIMAL);
@@ -97,8 +103,11 @@ int main(int argc, char **argv) {
 /*destNodeId*/                                  printf("\"%ld\",", INT);
 /*destSpan*/                                    printf("\"%ld\",", INT);
 /*destIpAddr*/                                  printf("\"%ld\",", INT);
-/*originalCalledPartyNumber*/                   printf("\"%ld\",", phone_number());
-/*finalCalledPartyNumber*/                      printf("\"%ld\",", phone_number()); //must be read in as string for sstables
+                                                if (r < epsilon)
+/*callingPartyNumber*/                              printf("\"780%d\",", guaranteedPN[(row+1)%3]);
+                                                else
+/*originalCalledPartyNumber*/                       printf("\"7%d%d\",", area_code, phone_number());
+/*finalCalledPartyNumber*/                      printf("\"%d%d\",", area_code, phone_number()); //must be read in as string for sstables
 /*finalCalledPartyUnicodeLoginUserID*/          printf("\"%s\",", STRING); //must be read in as string for sstables
 /*destCause_location*/                          printf("\"%lf\",", DECIMAL);
 /*destCause_value*/                             printf("\"%lf\",", DECIMAL);
@@ -167,7 +176,7 @@ int main(int argc, char **argv) {
 /*OutgoingProtocolCallRef*/                     printf("\"%s\",", STRING);
 /*currentRoutingReason*/                        printf("\"%ld\",", INT);
 /*lastRedirectingRoutingReason*/                printf("\"%ld\",", INT);
-/*areaCode*/                                 		printf("\"7%ld\",", random_at_most(99));
+/*areaCode*/                                 		printf("\"7%ld\",", area_code);
 /*originCountryCode*/                           printf("\"%ld\",", random_at_most(99));
 /*destCountryCode*/                          		printf("\"%ld\"\n", random_at_most(99));
 
