@@ -66,7 +66,7 @@ int main(int argc, char **argv) {
 	struct timeval  tv1, tv2;
 	gettimeofday(&tv1, NULL);
 
-	int guaranteedPN[3] = {4411299,3231283,9901234};
+	unsigned int guaranteedPN[3] = {4411299,3231283,9901234};
     float epsilon = 0.2;
     for(row = 0; row < atoi(argv[1]); row++) {
             float r = ((double) rand() / (RAND_MAX));
@@ -81,7 +81,7 @@ int main(int argc, char **argv) {
 /*origSpan*/                                    printf("\"%ld\",", INT);
 /*origIpAddr*/                                  printf("\"%ld\",", INT);
                                                 if (r < epsilon)
-/*callingPartyNumber*/                              printf("\"780%d\",", guaranteedPN[row%3]);
+/*callingPartyNumber*/                              printf("\"780%ld\",", guaranteedPN[row%3]);
                                                 else
                                                     printf("\"7%d%d\",", area_code, phone_number());
 /*callingPartyUnicodeLoginUserID*/              printf("\"%s\",", STRING);
@@ -104,7 +104,7 @@ int main(int argc, char **argv) {
 /*destSpan*/                                    printf("\"%ld\",", INT);
 /*destIpAddr*/                                  printf("\"%ld\",", INT);
                                                 if (r < epsilon)
-/*callingPartyNumber*/                              printf("\"780%d\",", guaranteedPN[(row+1)%3]);
+/*callingPartyNumber*/                              printf("\"780%ld\",", guaranteedPN[(row+1)%3]);
                                                 else
 /*originalCalledPartyNumber*/                       printf("\"7%d%d\",", area_code, phone_number());
 /*finalCalledPartyNumber*/                      printf("\"%d%d\",", area_code, phone_number()); //must be read in as string for sstables
