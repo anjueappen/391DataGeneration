@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/time.h>
+#include <string.h>
 
 const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const long INT = 1234567;
@@ -61,7 +62,13 @@ int main(int argc, char **argv) {
         return 1;
     }
 
-    int row;
+    char buf[1048576];
+    memset(buf, '\0', sizeof(buf));
+    FILE * fp;
+    fp = fopen("test.csv", "w");
+
+    setvbuf(fp, buf, _IOFBF, 1048576);
+    unsigned int row;
     srand(time(NULL));
 	struct timeval  tv1, tv2;
 	gettimeofday(&tv1, NULL);
@@ -72,113 +79,113 @@ int main(int argc, char **argv) {
             float r = ((double) rand() / (RAND_MAX));
             int area_code = random_at_most(99);
             /* Default values are "row x col" */
-/*cdrRecordType*/                               printf("\"%ld.0\",", random_at_most(10));
-/*globalCallID_callManagerId*/                  printf("\"%ld\",", INT);
-/*globalCallID_callId*/                         printf("\"%ld\",", INT);
-/*origLegCallIdentifier*/                       printf("\"%ld\",", INT);
-/*dateTimeOrigination*/                         printf("\"%ld\",", INT);
-/*origNodeId*/                                  printf("\"%ld\",", INT);
-/*origSpan*/                                    printf("\"%ld\",", INT);
-/*origIpAddr*/                                  printf("\"%ld\",", INT);
+/*cdrRecordType*/                               fprintf(fp,"\"%ld.0\",", random_at_most(10));
+/*globalCallID_callManagerId*/                  fprintf(fp,"\"%ld\",", INT);
+/*globalCallID_callId*/                         fprintf(fp,"\"%ld\",", INT);
+/*origLegCallIdentifier*/                       fprintf(fp,"\"%ld\",", INT);
+/*dateTimeOrigination*/                         fprintf(fp,"\"%ld\",", INT);
+/*origNodeId*/                                  fprintf(fp,"\"%ld\",", INT);
+/*origSpan*/                                    fprintf(fp,"\"%ld\",", INT);
+/*origIpAddr*/                                  fprintf(fp,"\"%ld\",", INT);
                                                 if (r < epsilon)
-/*callingPartyNumber*/                              printf("\"780%ld\",", guaranteedPN[row%3]);
+/*callingPartyNumber*/                              fprintf(fp,"\"780%u\",", guaranteedPN[row%3]);
                                                 else
-                                                    printf("\"7%d%d\",", area_code, phone_number());
-/*callingPartyUnicodeLoginUserID*/              printf("\"%s\",", STRING);
-/*origCause_location*/                          printf("\"%lf\",", DECIMAL);
-/*origCause_value*/                             printf("\"%lf\",", DECIMAL);
-/*origPrecedenceLevel*/                         printf("\"%lf\",", DECIMAL);
-/*origMediaTransportAddress_IP*/                printf("\"%ld\",", INT);
-/*origMediaTransportAddress_Port*/              printf("\"%ld\",", INT);
-/*origMediaCap_payloadCapability*/              printf("\"%ld\",", INT);
-/*origMediaCap_maxFramesPerPacket*/             printf("\"%ld\",", 5);
-/*origVideoCap_Codec*/                          printf("\"%lf\",", DECIMAL);
-/*origVideoCap_Bandwidth*/                      printf("\"%ld\",", INT);
-/*origVideoCap_Resolution*/                     printf("\"%lf\",", DECIMAL);
-/*origVideoTransportAddress_IP*/                printf("\"%ld\",", INT);
-/*origVideoTransportAddress_Port*/              printf("\"%ld\",", INT);
-/*origRSVPAudioStat*/                           printf("\"%lf\",", DECIMAL);
-/*origRSVPVideoStat*/                           printf("\"%lf\",", DECIMAL);
-/*destLegCallIdentifier*/                       printf("\"%ld\",", INT);
-/*destNodeId*/                                  printf("\"%ld\",", INT);
-/*destSpan*/                                    printf("\"%ld\",", INT);
-/*destIpAddr*/                                  printf("\"%ld\",", INT);
+                                                    fprintf(fp,"\"7%d%ld\",", area_code, phone_number());
+/*callingPartyUnicodeLoginUserID*/              fprintf(fp,"\"%s\",", STRING);
+/*origCause_location*/                          fprintf(fp,"\"%lf\",", DECIMAL);
+/*origCause_value*/                             fprintf(fp,"\"%lf\",", DECIMAL);
+/*origPrecedenceLevel*/                         fprintf(fp,"\"%lf\",", DECIMAL);
+/*origMediaTransportAddress_IP*/                fprintf(fp,"\"%ld\",", INT);
+/*origMediaTransportAddress_Port*/              fprintf(fp,"\"%ld\",", INT);
+/*origMediaCap_payloadCapability*/              fprintf(fp,"\"%ld\",", INT);
+/*origMediaCap_maxFramesPerPacket*/             fprintf(fp,"\"%d\",", 5);
+/*origVideoCap_Codec*/                          fprintf(fp,"\"%lf\",", DECIMAL);
+/*origVideoCap_Bandwidth*/                      fprintf(fp,"\"%ld\",", INT);
+/*origVideoCap_Resolution*/                     fprintf(fp,"\"%lf\",", DECIMAL);
+/*origVideoTransportAddress_IP*/                fprintf(fp,"\"%ld\",", INT);
+/*origVideoTransportAddress_Port*/              fprintf(fp,"\"%ld\",", INT);
+/*origRSVPAudioStat*/                           fprintf(fp,"\"%lf\",", DECIMAL);
+/*origRSVPVideoStat*/                           fprintf(fp,"\"%lf\",", DECIMAL);
+/*destLegCallIdentifier*/                       fprintf(fp,"\"%ld\",", INT);
+/*destNodeId*/                                  fprintf(fp,"\"%ld\",", INT);
+/*destSpan*/                                    fprintf(fp,"\"%ld\",", INT);
+/*destIpAddr*/                                  fprintf(fp,"\"%ld\",", INT);
                                                 if (r < epsilon)
-/*callingPartyNumber*/                              printf("\"780%ld\",", guaranteedPN[(row+1)%3]);
+/*callingPartyNumber*/                              fprintf(fp,"\"780%u\",", guaranteedPN[(row+1)%3]);
                                                 else
-/*originalCalledPartyNumber*/                       printf("\"7%d%d\",", area_code, phone_number());
-/*finalCalledPartyNumber*/                      printf("\"%d%d\",", area_code, phone_number()); //must be read in as string for sstables
-/*finalCalledPartyUnicodeLoginUserID*/          printf("\"%s\",", STRING); //must be read in as string for sstables
-/*destCause_location*/                          printf("\"%lf\",", DECIMAL);
-/*destCause_value*/                             printf("\"%lf\",", DECIMAL);
-/*destPrecedenceLevel*/                         printf("\"%lf\",", DECIMAL);
-/*destMediaTransportAddress_IP*/                printf("\"%ld\",", INT);
-/*destMediaTransportAddress_Port*/              printf("\"%ld\",", INT);
-/*destMediaCap_payloadCapability*/              printf("\"%ld\",", INT);
-/*destMediaCap_maxFramesPerPacket*/             printf("\"%ld\",", INT);
-/*destVideoCap_Codec*/                          printf("\"%lf\",", DECIMAL);
-/*destVideoCap_Bandwidth*/                      printf("\"%ld\",", INT);
-/*destVideoCap_Resolution*/                     printf("\"%lf\",", DECIMAL);
-/*destVideoTransportAddress_IP*/                printf("\"%ld\",", INT);
-/*destVideoTransportAddress_Port*/              printf("\"%ld\",", INT);
-/*destRSVPAudioStat*/                           printf("\"%ld\",", INT);
-/*destRSVPVideoStat*/                           printf("\"%lf\",", DECIMAL);
-/*dateTimeConnect*/                             printf("\"%ld\",", timestamp());
-/*dateTimeDisConnect*/                          printf("\"%ld\",", timestamp());
-/*lastRedirectDn*/                              printf("\"%s\",", STRING);
-/*pkid*/                                        printf("\"%s\",", STRING);
-/*originalCalledPartyNumberPartition*/          printf("\"%s\",", STRING);
-/*NumberPartition*/                             printf("\"%s\",", STRING);
-/*finalCalledPartyNumberPartition*/             printf("\"%s\",", STRING);
-/*lastRedirectDnPartition*/                     printf("\"%s\",", STRING);
-/*duration*/                                    printf("\"%ld\",", random_at_most(1000));
-/*origDeviceName*/                              printf("\"%s\",", STRING);
-/*destDeviceName*/                              printf("\"%s\",", STRING);
-/*origCallTerminationOnBehalfOf*/               printf("\"%ld\",", INT);
-/*destCallTerminationOnBehalfOf*/               printf("\"%ld\",", INT);
-/*origCalledPartyRedirectOnBehalfOf*/           printf("\"%ld\",", INT);
-/*lastRedirectRedirectOnBehalfOf*/              printf("\"%ld\",", INT);
-/*origCalledPartyRedirectReason*/               printf("\"%ld\",", INT);
-/*lastRedirectRedirectReason*/                  printf("\"%ld\",", INT);
-/*destConversationID*/                          printf("\"%ld\",", INT);
-/*globalCallId_ClusterId*/                      printf("\"%s\",", STRING);
-/*joinOnBehalfOf*/                              printf("\"%ld\",", INT);
-/*comment*/                                     printf("\"%s\",", STRING);
-/*authCodeDescription*/                         printf("\"%s\",", STRING);
-/*authorizationLevel*/                          printf("\"%ld\",", INT);
-/*clientMatterCode*/                            printf("\"%s\",", STRING);
-/*origDTMFMethod*/                              printf("\"%ld\",", INT);
-/*destDTMFMethod*/                              printf("\"%ld\",", INT);
-/*callSecuredStatus*/                           printf("\"%ld\",", random_at_most(2));
-/*origConversationID*/                          printf("\"%ld\",", INT);
-/*origMediaCap_Bandwidth*/                      printf("\"%ld\",", INT);
-/*destMediaCap_Bandwidth*/                      printf("\"%ld\",", INT);
-/*authorizationCodeValue*/                      printf("\"%s\",", STRING);
-/*outpulsedCallingPartyNumber*/                 printf("\"%s\",", STRING);
-/*outpulsedCalledPartyNumber*/                  printf("\"%s\",", STRING);
-/*origIpv4v6Addr*/                              printf("\"%s\",", STRING);
-/*destIpv4v6Addr*/                              printf("\"%s\",", STRING);
-/*origVideoCap_Codec_Channel2*/                 printf("\"%lf\",", DECIMAL);
-/*origVideoCap_Bandwidth_Channel2*/             printf("\"%ld\",", INT);
-/*origVideoCap_Resolution_Channel2*/            printf("\"%lf\",", DECIMAL);
-/*origVideoTransportAddress_IP_Channel2*/       printf("\"%ld\",", INT);
-/*origVideoTransportAddress_Port_Channel2*/     printf("\"%ld\",", INT);
-/*origVideoChannel_Role_Channel2*/              printf("\"%ld\",", INT);
-/*destVideoCap_Codec_Channel2*/                 printf("\"%lf\",", DECIMAL);
-/*destVideoCap_Bandwidth_Channel2*/             printf("\"%ld\",", INT);
-/*destVideoCap_Resolution_Channel2*/            printf("\"%lf\",", DECIMAL);
-/*destVideoTransportAddress_IP_Channel2*/       printf("\"%ld\",", INT);
-/*destVideoTransportAddress_Port_Channel2*/     printf("\"%ld\",", INT);
-/*destVideoChannel_Role_Channel2*/              printf("\"%ld\",", INT);
-/*IncomingProtocolID*/                          printf("\"%ld\",", INT);
-/*IncomingProtocolCallRef*/                     printf("\"%s\",", STRING);
-/*OutgoingProtocolID*/                          printf("\"%ld\",", INT);
-/*OutgoingProtocolCallRef*/                     printf("\"%s\",", STRING);
-/*currentRoutingReason*/                        printf("\"%ld\",", INT);
-/*lastRedirectingRoutingReason*/                printf("\"%ld\",", INT);
-/*areaCode*/                                 		printf("\"7%ld\",", area_code);
-/*originCountryCode*/                           printf("\"%ld\",", random_at_most(99));
-/*destCountryCode*/                          		printf("\"%ld\"\n", random_at_most(99));
+/*originalCalledPartyNumber*/                       fprintf(fp,"\"7%d%ld\",", area_code, phone_number());
+/*finalCalledPartyNumber*/                      fprintf(fp,"\"%d%ld\",", area_code, phone_number()); //must be read in as string for sstables
+/*finalCalledPartyUnicodeLoginUserID*/          fprintf(fp,"\"%s\",", STRING); //must be read in as string for sstables
+/*destCause_location*/                          fprintf(fp,"\"%lf\",", DECIMAL);
+/*destCause_value*/                             fprintf(fp,"\"%lf\",", DECIMAL);
+/*destPrecedenceLevel*/                         fprintf(fp,"\"%lf\",", DECIMAL);
+/*destMediaTransportAddress_IP*/                fprintf(fp,"\"%ld\",", INT);
+/*destMediaTransportAddress_Port*/              fprintf(fp,"\"%ld\",", INT);
+/*destMediaCap_payloadCapability*/              fprintf(fp,"\"%ld\",", INT);
+/*destMediaCap_maxFramesPerPacket*/             fprintf(fp,"\"%ld\",", INT);
+/*destVideoCap_Codec*/                          fprintf(fp,"\"%lf\",", DECIMAL);
+/*destVideoCap_Bandwidth*/                      fprintf(fp,"\"%ld\",", INT);
+/*destVideoCap_Resolution*/                     fprintf(fp,"\"%lf\",", DECIMAL);
+/*destVideoTransportAddress_IP*/                fprintf(fp,"\"%ld\",", INT);
+/*destVideoTransportAddress_Port*/              fprintf(fp,"\"%ld\",", INT);
+/*destRSVPAudioStat*/                           fprintf(fp,"\"%ld\",", INT);
+/*destRSVPVideoStat*/                           fprintf(fp,"\"%lf\",", DECIMAL);
+/*dateTimeConnect*/                             fprintf(fp,"\"%ld\",", timestamp());
+/*dateTimeDisConnect*/                          fprintf(fp,"\"%ld\",", timestamp());
+/*lastRedirectDn*/                              fprintf(fp,"\"%s\",", STRING);
+/*pkid*/                                        fprintf(fp,"\"%s\",", STRING);
+/*originalCalledPartyNumberPartition*/          fprintf(fp,"\"%s\",", STRING);
+/*NumberPartition*/                             fprintf(fp,"\"%s\",", STRING);
+/*finalCalledPartyNumberPartition*/             fprintf(fp,"\"%s\",", STRING);
+/*lastRedirectDnPartition*/                     fprintf(fp,"\"%s\",", STRING);
+/*duration*/                                    fprintf(fp,"\"%ld\",", random_at_most(1000));
+/*origDeviceName*/                              fprintf(fp,"\"%s\",", STRING);
+/*destDeviceName*/                              fprintf(fp,"\"%s\",", STRING);
+/*origCallTerminationOnBehalfOf*/               fprintf(fp,"\"%ld\",", INT);
+/*destCallTerminationOnBehalfOf*/               fprintf(fp,"\"%ld\",", INT);
+/*origCalledPartyRedirectOnBehalfOf*/           fprintf(fp,"\"%ld\",", INT);
+/*lastRedirectRedirectOnBehalfOf*/              fprintf(fp,"\"%ld\",", INT);
+/*origCalledPartyRedirectReason*/               fprintf(fp,"\"%ld\",", INT);
+/*lastRedirectRedirectReason*/                  fprintf(fp,"\"%ld\",", INT);
+/*destConversationID*/                          fprintf(fp,"\"%ld\",", INT);
+/*globalCallId_ClusterId*/                      fprintf(fp,"\"%s\",", STRING);
+/*joinOnBehalfOf*/                              fprintf(fp,"\"%ld\",", INT);
+/*comment*/                                     fprintf(fp,"\"%s\",", STRING);
+/*authCodeDescription*/                         fprintf(fp,"\"%s\",", STRING);
+/*authorizationLevel*/                          fprintf(fp,"\"%ld\",", INT);
+/*clientMatterCode*/                            fprintf(fp,"\"%s\",", STRING);
+/*origDTMFMethod*/                              fprintf(fp,"\"%ld\",", INT);
+/*destDTMFMethod*/                              fprintf(fp,"\"%ld\",", INT);
+/*callSecuredStatus*/                           fprintf(fp,"\"%ld\",", random_at_most(2));
+/*origConversationID*/                          fprintf(fp,"\"%ld\",", INT);
+/*origMediaCap_Bandwidth*/                      fprintf(fp,"\"%ld\",", INT);
+/*destMediaCap_Bandwidth*/                      fprintf(fp,"\"%ld\",", INT);
+/*authorizationCodeValue*/                      fprintf(fp,"\"%s\",", STRING);
+/*outpulsedCallingPartyNumber*/                 fprintf(fp,"\"%s\",", STRING);
+/*outpulsedCalledPartyNumber*/                  fprintf(fp,"\"%s\",", STRING);
+/*origIpv4v6Addr*/                              fprintf(fp,"\"%s\",", STRING);
+/*destIpv4v6Addr*/                              fprintf(fp,"\"%s\",", STRING);
+/*origVideoCap_Codec_Channel2*/                 fprintf(fp,"\"%lf\",", DECIMAL);
+/*origVideoCap_Bandwidth_Channel2*/             fprintf(fp,"\"%ld\",", INT);
+/*origVideoCap_Resolution_Channel2*/            fprintf(fp,"\"%lf\",", DECIMAL);
+/*origVideoTransportAddress_IP_Channel2*/       fprintf(fp,"\"%ld\",", INT);
+/*origVideoTransportAddress_Port_Channel2*/     fprintf(fp,"\"%ld\",", INT);
+/*origVideoChannel_Role_Channel2*/              fprintf(fp,"\"%ld\",", INT);
+/*destVideoCap_Codec_Channel2*/                 fprintf(fp,"\"%lf\",", DECIMAL);
+/*destVideoCap_Bandwidth_Channel2*/             fprintf(fp,"\"%ld\",", INT);
+/*destVideoCap_Resolution_Channel2*/            fprintf(fp,"\"%lf\",", DECIMAL);
+/*destVideoTransportAddress_IP_Channel2*/       fprintf(fp,"\"%ld\",", INT);
+/*destVideoTransportAddress_Port_Channel2*/     fprintf(fp,"\"%ld\",", INT);
+/*destVideoChannel_Role_Channel2*/              fprintf(fp,"\"%ld\",", INT);
+/*IncomingProtocolID*/                          fprintf(fp,"\"%ld\",", INT);
+/*IncomingProtocolCallRef*/                     fprintf(fp,"\"%s\",", STRING);
+/*OutgoingProtocolID*/                          fprintf(fp,"\"%ld\",", INT);
+/*OutgoingProtocolCallRef*/                     fprintf(fp,"\"%s\",", STRING);
+/*currentRoutingReason*/                        fprintf(fp,"\"%ld\",", INT);
+/*lastRedirectingRoutingReason*/                fprintf(fp,"\"%ld\",", INT);
+/*areaCode*/                                 	fprintf(fp,"\"7%d\",", area_code);
+/*originCountryCode*/                           fprintf(fp,"\"%ld\",", random_at_most(99));
+/*destCountryCode*/                             fprintf(fp,"\"%ld\"\n", random_at_most(99));
 
                                                        }
     
@@ -186,5 +193,7 @@ int main(int argc, char **argv) {
 		fprintf (stderr,"Total time = %f seconds\n",
 			(double) (tv2.tv_usec - tv1.tv_usec) / 1000000 +
 			(double) (tv2.tv_sec - tv1.tv_sec));
+        fflush(fp);
+        fclose(fp);
 		return 0;
 }
