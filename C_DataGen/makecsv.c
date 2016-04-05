@@ -57,15 +57,15 @@ char *rand_string(char *str, size_t size)
 }
 
 int main(int argc, char **argv) {
-    if( argc != 2) {
-        printf("Mandatory arguments: <number of rows>\n");
+    if( argc != 3) {
+        printf("Mandatory arguments: <number of rows> <filepath>\n");
         return 1;
     }
 
     char buf[1048576];
     memset(buf, '\0', sizeof(buf));
     FILE * fp;
-    fp = fopen("test.csv", "w");
+    fp = fopen(argv[2], "w");
 
     setvbuf(fp, buf, _IOFBF, 1048576);
     unsigned int row;
